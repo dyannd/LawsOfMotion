@@ -105,6 +105,10 @@ $(".white-ball").click(function() {
     $(".white-ball").css("animation-duration", timerollin+'s');
     $(".white-ball").css("animation-timing-function", "ease-out");
     $(".white-ball").css("animation-fill-mode", "forwards");
+    $(".white-ball").css("-webkit-animation-name", "rolltohole");
+    $(".white-ball").css("-webkit-animation-duration", timerollin+'s');
+    $(".white-ball").css("-webkit-animation-timing-function", "ease-out");
+    $(".white-ball").css("-webkit-animation-fill-mode", "forwards");
   
     
     $(".red-dot").css("animation", "dotrolltohole " + timerollin + 's' + " ease-out forwards");
