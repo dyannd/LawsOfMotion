@@ -103,6 +103,8 @@ $(".white-ball").click(function() {
   setTimeout(function() {
     $(".white-ball").css("animation", "rolltohole " + timerollin + 's' + " ease-out forwards");
     $(".red-dot").css("animation", "dotrolltohole " + timerollin + 's' + " ease-out forwards");
+    $(".white-ball").css("-webkit-animation", "rolltohole " + timerollin + 's' + " ease-out forwards");
+    $(".red-dot").css("-webkit-animation", "dotrolltohole " + timerollin + 's' + " ease-out forwards");
  
   }, 70)
 
