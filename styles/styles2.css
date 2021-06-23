@@ -464,13 +464,12 @@ body {
 @keyframes rolltohole {
   0% {
     transform: translateY(0);
-    -webkit-transform: translateY(0);
+  
   }
 
   80% {
     margin-bottom: 0;
     transform: translateY(-9.7rem);
-    -webkit-transform: translateY(-9.7rem);
     background: linear-gradient(to bottom, #F2EDD7, #706e63);
     box-shadow: 0 0.5rem rgb(46,79,65,0.5);
   }
@@ -478,11 +477,32 @@ body {
   100% {
     margin-bottom: 0;
     transform: translateY(-10.1rem) scale(85%);
-    -webkit-transform: translateY(-10.1rem) scale(85%);
     background: linear-gradient(to bottom, #525252, black);
     box-shadow: none;
   }
 }
+
+@-webkit-keyframes rolltohole{
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  80% {
+    margin-bottom: 0;
+    -webkit-transform: translateY(-9.7rem);
+    -webkit-background: linear-gradient(to bottom, #F2EDD7, #706e63);
+    -webkit-box-shadow: 0 0.5rem rgb(46,79,65,0.5);
+  }
+
+  100% {
+    margin-bottom: 0;
+    -webkit-transform: translateY(-10.1rem) scale(85%);
+    -webkit-transform: translateY(-10.1rem) scale(85%);
+    -webkit-background: linear-gradient(to bottom, #525252, black);
+    -webkit-box-shadow: none;
+  }
+}
+  
 
 /**Modify the ball's dot animation when being it -> rolling up**/
 @keyframes dotrolltohole {
