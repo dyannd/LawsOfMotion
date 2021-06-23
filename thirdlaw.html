@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Laws of Motion</title>
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles3.css" />
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!--Google Fonts-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;600&family=Oxygen:wght@300;400;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <!--Icons-->
+  <script src="https://kit.fontawesome.com/22acfaed3e.js" crossorigin="anonymous"></script>
+  <!--Bootstrap Script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+  <!--TASKBAR-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="taskbar-column">
+        <section id="taskbar">
+          <!-- Nav Bar -->
+          <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="index.html">LAWS OF MOTION</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-list-ul navbar-toggler-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="firstlaw.html">FIRST LAW</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secondlaw.html">SECOND LAW</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="thirdlaw.html">THIRD LAW</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Content -->
+  <div class="container-fluid">
+    <section id="illustration">
+
+      <div class="row">
+
+        <div class="col col-lg-2 col-md-2 col-sm-2 refcolumn container-fluid">
+
+          <figure class="refpoint">
+            <p class="refpointtext">
+              REFERENCE POINT
+            <figure class="pointfigure">
+
+            </figure>
+            </p>
+
+          </figure>
+        </div>
+
+        <div class="col col-lg-5 col-md-10 col-sm-10 illu-graphics section-height container">
+          <div class="row ">
+
+            <div class="pool-table">
+              <div class="pool-table-rail-top">
+                <div class="pool-table-hole">
+                </div>
+
+              </div>
+
+
+              <div class="pool-set">
+
+
+
+                <div class="red-ball">
+                  <div class="white-dot">
+                    <div class="num-3">
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="white-ball">
+                  <div class="red-dot">
+                  </div>
+                </div>
+
+                <figure class="pool-stick">
+                  <figure class="pool-stick-background"></figure>
+                  <div class="pool-top-portion">
+                    <figure class="pool-top">
+                      <figure class="pool-stick-head"></figure>
+                    </figure>
+                  </div>
+                </figure>
+
+                <div class="pool-table-rail-bottom">
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+          <div class="row">
+
+            <div class="slidecontainer">
+              <div class="slidedes">
+                FORCE VALUE:
+              </div>
+              <input type="range" min="1" max="5" value="1" class="slider" id="myRange">
+              <div class="slidevalue">
+
+                0.1N
+              </div>
+            </div>
+
+            <div class="accelerometer">
+              <div class="ballweighttext">
+                BALL WEIGHT: 200g
+              </div>
+
+
+              <div class="accelerometertext">
+                ACCELERATION:
+
+              </div>
+              <span class="accelerometervalue1">
+                0.
+              </span>
+              <span class="accelerometervalue2">
+                0
+              </span>
+              <span class="accelerometervalue3">
+                0
+              </span>
+              <span class="accelerometervalue4">
+                m/s^2
+              </span>
+              <button class="reset">RESET</button>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col text col-lg-5 col-md-12 col-sm-12 section-height">
+          <div class="description-container">
+
+
+            <div class="description">
+              <h2 class="des-title">DESCRIPTIONS</h2>
+              <p2 class="des-text">
+                Click on the information you wish to know!
+              </p2>
+              <p class="ref-text">
+
+                Learn more at: <i class="fas fa-external-link-square-alt"></i> <a class="ref-link" href='https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion'>Wikipedia</a> <a class="ref-link"
+                  href='http://hyperphysics.phy-astr.gsu.edu/hbase/colsta.html#c2'>HyperPhysics</a></p>
+            </div>
+            <div class="button-container">
+              <div  class="button-gradient states">
+                DETAIL
+              </div>
+              <div  class="button-gradient formula">
+                FORMULA
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!--jquery before js-->
+  <script type="text/javascript" src="thirdlaw.js"></script>
+</body>
+
+</html>
