@@ -101,10 +101,14 @@ $(".white-ball").click(function() {
 
   //Wait for 70ms to play ball animation to make it looks like the stick hit the ball
   setTimeout(function() {
-    $(".white-ball").css("animation", "rolltohole " + timerollin + 's' + " ease-out forwards");
+    $(".white-ball").css("animation-name", "rolltohole");
+    $(".white-ball").css("animation-duration", timerollin+'s');
+    $(".white-ball").css("animation-timing-function", "ease-out");
+    $(".white-ball").css("animation-fill-mode", "forwards");
+  
+    
     $(".red-dot").css("animation", "dotrolltohole " + timerollin + 's' + " ease-out forwards");
-    $(".white-ball").css("-webkit-animation", "rolltohole " + timerollin + 's' + " ease-out forwards");
-    $(".red-dot").css("-webkit-animation", "dotrolltohole " + timerollin + 's' + " ease-out forwards");
+    
  
   }, 70)
 
