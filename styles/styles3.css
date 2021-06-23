@@ -1,0 +1,657 @@
+body {
+  background-color: #393232;
+  font-family: 'Oxygen', sans-serif;
+  height: 500px;
+  color:#F2EDD7;
+
+}
+
+/**Taskbar**/
+.taskbar-column {
+  width:100%;
+  background-color: #3A6351;
+  box-shadow: 0 0.3rem rgb(46,79,65,0.5);
+}
+.navbar{
+  padding:0;
+}
+.navbar-brand {
+  color:#F2EDD7;
+  font-size: 1.9rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  margin-left: 5rem;
+  transition:all 0.5s
+}
+
+.navbar-brand:hover{
+  color:#E48257;
+  transform: scale(1.1,1.1);
+
+}
+.navbar-nav{
+  margin-left: auto;
+  margin-right: 5rem;
+}
+
+.nav-item {
+  font-family: 'Oxygen', sans-serif;
+  margin: 0 0 0 1rem;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.nav-link{
+  color:#F2EDD7;
+  transition: all 0.5s;
+}
+
+.nav-link:hover{
+  color:#E48257;
+  transform: scale(1.1,1.1);
+}
+
+.active > .nav-link{
+  background-color: #F2EDD7;
+  font-weight: bold;
+  color:#3A6351;
+}
+
+.navbar-toggler{
+  border:solid;
+  border-width: 0.02rem;
+  border-color:#F2EDD7;
+  border-radius: 0;
+  margin-right: 1rem;
+  margin-left: auto;
+  width:2.5rem;
+  height:2.5rem;
+  padding:0;
+  padding-top:0.5rem;
+
+}
+.navbar-toggler i{
+  color:#F2EDD7;
+  margin:auto;
+}
+
+#navbarNavDropdown{
+  margin-left: 4rem;
+}
+
+/**Text color**/
+.text {
+  color: #F2EDD7;
+  text-align: center;
+  padding: 0;
+}
+
+/**Description region**/
+.description-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 7rem;
+  margin-bottom:7rem;
+}
+
+.description {
+  text-align: left;
+  margin: auto;
+  animation: flydown 1s;
+}
+
+.des-title {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.des-text {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+
+.ref-text {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+.ref-link {
+  color: #F2EDD7;
+  font-size: 0.8rem;
+  transition: all 0.5s;
+}
+
+.ref-link:hover {
+  color: #E48257;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+/**CONFIG FOR GRADIENT BUTTON**/
+.button-container{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.button-gradient {
+  width:49%;
+  border-width: 0.02rem;
+  border-color: #F2EDD7;
+  border-style: solid;
+  background: linear-gradient(to right, #E48257 10%, #393232 100%);
+  background-size: 400%;
+  background-position: right;
+  margin: 1rem 0;
+  font-size: 1rem;
+  padding: 0.3rem 0.3rem;
+  font-weight: bolder;
+  transition: all 1s;
+  animation: flyup 1s;
+  cursor: pointer;
+}
+
+.button-gradient:hover {
+  background-position: left;
+  cursor: pointer;
+}
+
+.button-clicked {
+  width:49%;
+  border-width: 0.02rem;
+  border-color: #F2EDD7;
+  border-style: solid;
+  background-color: #E48257;
+  margin: 1rem 0;
+  font-size: 1rem;
+  padding: 0.3rem 0.3rem;
+  font-weight: bolder;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+/**The Reference point**/
+.refpoint {
+  margin: auto;
+  margin-top: 9rem;
+  font-size: 0.8rem;
+  animation: rollin 1s;
+  text-align: center;
+}
+
+.refpointtext {
+  width: 1rem;
+  display: inline-block;
+  margin: auto;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.pointfigure {
+  height: 0.7rem;
+  width: 0.7rem;
+  background: #F2EDD7;
+  border-radius: 100%;
+  margin: auto;
+  transform: translateY(-6rem) translateX(2rem);
+}
+/**The whole illustration column of the pool table and slider**/
+.illu-graphics {
+  margin-top:7rem;
+  margin-bottom: 7rem;
+  color: #F2EDD7;
+}
+
+/**Pool Table**/
+.pool-table {
+  width: 28rem;
+  height: 22rem;
+  background-color: #3A6351;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  animation: flydown 1s;
+}
+
+.pool-table-rail-top, .pool-table-rail-bottom {
+  width: 100%;
+  height: 2rem;
+  background-color: #91684A;
+}
+
+.pool-table-rail-top {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 0 0.5rem rgb(46,79,65,0.5);
+  padding-top: 0.7rem;
+}
+
+.pool-table-rail-bottom {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform: translateY(-2rem);
+}
+
+.pool-table-hole {
+  margin: auto;
+  height: 2.4rem;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-top-style: solid;
+  border-top-color: #493323;
+  border-width: 0.2rem;
+  width: 2.4rem;
+  background-color: black;
+}
+
+
+
+/**The whole ball and stick set**/
+.pool-set {
+  margin: 9rem auto;
+  position: relative;
+}
+
+/**The sphere**/
+.white-ball {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  background: linear-gradient(to bottom, #F2EDD7, #706e63);
+  box-shadow: 0 0.6rem rgb(46,79,65,0.5);
+  padding: 0.8rem 0;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  transform: translateY(3rem);
+  position: relative;
+  z-index: 2;
+}
+
+/**Red dot**/
+.red-dot {
+  height: 0.4rem;
+  width: 0.4rem;
+  margin: auto;
+  border-radius: 100%;
+  background: linear-gradient(to bottom, #d61818, #a31212);
+}
+
+/**RED BALL**/
+.red-ball {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  background: linear-gradient(to bottom, #ff5a14, #8f340d);
+  box-shadow: 0 0.6rem rgb(46,79,65,0.5);
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+
+/**Pool Stick**/
+.pool-stick {
+  width: 0.5rem;
+  height: 7rem;
+  margin: auto;
+  background: linear-gradient(to right, #f6e6cb 40%, grey 100%);
+  position: relative;
+  z-index: 1;
+}
+
+/**background used to hide the excess stick to create animation*#3A6351*/
+.pool-stick-background {
+  height: 75px;
+  background-color: #3A6351;
+}
+
+/**The #F2EDD7 head 0.12rem**/
+.pool-stick-head {
+  width: 100%;
+  height: 1rem;
+  background: linear-gradient(to right, #e1e8eb 40%, grey 100%);
+  transform: translateY(0.12rem);
+  border: 0;
+}
+
+/**The black pad**/
+.pool-top {
+  height: 0.15rem;
+  background: linear-gradient(to right, grey 40%, black 100%);
+  transform: translateY(-2rem);
+  border-radius: 10px;
+  border: 0;
+}
+
+/**Force Slider**/
+.slidecontainer {
+  width: 28rem;
+  height: auto;
+  display: flex;
+  border: solid;
+  border-color: #F2EDD7;
+  border-width: 0.02rem;
+  margin: auto;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  justify-content: space-between;
+  animation: flyup 1s;
+}
+
+.slidecontainer .slider {
+  -webkit-appearance: none;
+  height: 0.5rem;
+  width: 12rem;
+  border-radius: 5px;
+  background: linear-gradient(to right, #E48257 10%, #393232 100%);
+  outline: none;
+  padding: 0;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.slidecontainer .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #F2EDD7;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+}
+
+.slidecontainer .slider::-webkit-slider-thumb:hover {
+  background: linear-gradient(to right, #E48257 10%, #393232 100%);
+  border: solid;
+  border-color: #F2EDD7;
+  border-width: 0.1rem;
+  transform: scale(1.1,1.1);
+  transition: all .15s ease-in-out;
+}
+
+.slidevalue, .slidedes {
+  color: #F2EDD7;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: 'Oxygen', sans-serif;
+  transition: all .15s ease-in-out;
+}
+
+.slidevalue:hover {
+  color:  #E48257;
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+}
+
+/**accelerometer**/
+.accelerometer {
+  width: 28rem;
+  height: auto;
+  display: flex;
+  border: solid;
+  border-color: #F2EDD7;
+  border-width: 0.02rem;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0 0 0 1rem;
+  animation: flyup 1s;
+}
+
+.accelerometertext, .accelerometervalue1, .accelerometervalue2, .accelerometervalue3, .accelerometervalue4, .ballweighttext, .reset {
+  color: #F2EDD7;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: 'Oxygen', sans-serif;
+  transition: all .15s ease-in-out;
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+}
+
+.accelerometertext {
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.accelerometervalue1, .accelerometervalue2, .accelerometervalue3, .accelerometervalue4 {
+  margin-left: 0.2rem;
+}
+
+.accelerometervalue3:hover {
+  color: #E48257;
+  transform: scale(1.1,1.1);
+}
+
+.accelerometervalue2:hover {
+  color:#E48257;
+  transform: scale(1.1,1.1);
+}
+
+.accelerometervalue1:hover {
+  color:#E48257;
+  transform: scale(1.1,1.1);
+}
+
+/**config for reset button**/
+.reset {
+  border: none;
+  border-left:solid;
+  border-width: 0.02rem;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top:0;
+  margin-bottom:0;
+  padding:0 0.5rem;
+  background: linear-gradient(to right, #E48257 40%, #393232 100%);
+  background-size: 400%;
+  background-position: right;
+  transition: all 0.5s ease-out;
+}
+
+.reset:hover{
+  background-position: left;
+  transition: all 0.5s ease-out;
+}
+
+/**Animations**/
+
+@keyframes flydown {
+  from {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes flyup {
+  from {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes rollin {
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+/**Red ball roll to rail after being hit**/
+@keyframes ballRolltoRail {
+  0% {
+    transform: translateY(0);
+  }
+
+  80% {
+    margin-bottom: 0;
+    transform: translateY(-9.7rem);
+    background: linear-gradient(to bottom, #ff5a14, #8f340d);
+    box-shadow: 0 0.6rem rgb(46,79,65,0.5);
+  }
+
+  100% {
+    margin-bottom: 0;
+    transform: translateY(-10.1rem) scale(0.85,0.85);
+    background: linear-gradient(to bottom,#5e3625,#21130d);
+    box-shadow: none;
+  }
+}
+
+
+/**Modify the ball's dot animation when being it -> rolling up**/
+@keyframes redDotRolltoRedBall {
+  0% {
+    opacity: 1;
+  }
+
+  10% {
+    transform: rotateX(60deg) translateY(-1.8rem);
+    opacity: 0;
+  }
+
+  29% {
+    opacity: 0;
+  }
+
+  30% {
+    transform: rotateX(-60deg) translateY(1.8rem);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: rotateX(60deg) translateY(-1.8rem);
+    opacity: 0;
+  }
+
+  69% {
+    opacity: 0;
+  }
+
+  70% {
+    transform: rotateX(-60deg) translateY(1.8rem);
+    opacity: 0.3;
+  }
+
+  90% {
+    transform: rotateX(60deg) translateY(-1.8rem);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/**Animation for white ball to approach the red**/
+@keyframes whiteBalltoRedBall {
+  0% {
+    transform: translateY(3rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/**After hitting the red, the white goes on a little bit**/
+@keyframes whiteAfter {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-1rem);
+  }
+}
+
+@keyframes redDotAfter {
+  100% {
+    transform: rotateX(30deg) translateY(-0.4rem);
+  }
+
+  0% {
+    transform: translateY(0);
+  }
+}
+
+/**The red ball in the hole**/
+@keyframes hittingrail {
+  0% {
+    transform: translateY(-10rem) translateX(0) scale(0.85,0.85);
+    background: linear-gradient(to bottom,#5e3625,#21130d);
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  30% {
+    transform: translateY(-9.85rem) translateX(0.15rem) scale(0.85,0.85);
+    background: linear-gradient(to bottom,#5e3625,#21130d);
+    opacity: 0.6;
+    box-shadow: none;
+  }
+
+  60% {
+    transform: translateY(-9.95rem) translateX(0.25rem) scale(0.85,0.85);
+    background: linear-gradient(to bottom,#5e3625,#21130d);
+    box-shadow: none;
+    opacity: 0.2;
+  }
+
+  80% {
+    transform: translateY(-9.9rem) translateX(0.35rem) scale(0.85,0.85);
+    background: linear-gradient(to bottom,#5e3625,#21130d);
+    box-shadow: none;
+  }
+
+  100% {
+    transform: translateY(-9.9rem) translateX(0.45rem) scale(0.85,0.85);
+    background: linear-gradient(to bottom,#5e3625,#21130d);
+    box-shadow: none;
+    opacity: 0;
+  }
+}
+
+
+/**Update Acceleration text**/
+@keyframes changingacceleration {
+  0% {
+    color: #F2EDD7;
+    transform: scale(1,1);
+  }
+
+  50% {
+    color:#E48257;
+    transform: scale(1.1,1.1);
+  }
+
+  100% {
+    color: #F2EDD7;
+    transform: scale(1,1);
+  }
+}
