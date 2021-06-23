@@ -108,19 +108,7 @@ $(".white-ball").click(function() {
     $(".red-dot").css("animation-fill-mode", "forwards");
   }, 70)
 
-  //Run another set after done animating
-  setTimeout(function() {
-    //Hitting the rail animation after 50ms of hitting animation
-    $(".white-ball").css("animation", "hittingrail " + timedis + 's' + " linear ");
-    $(".red-dot").css("animation", "dothittingrail " + timedis + 's' + " linear ");
-    //Hide the ball completely
-
-    //And then animate its appearance:
-    setTimeout(function() {
-      $(".white-ball").animate({opacity: "1"},1000);
-
-    }, (animation_time / 1)*1000);
-  }, animation_time*1000+70);
+ 
 
 
 });
