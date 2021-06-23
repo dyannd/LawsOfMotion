@@ -476,7 +476,7 @@ body {
 
   100% {
     margin-bottom: 0;
-    transform: translateY(-10.1rem) scale(85%);
+    transform: translateY(-10.1rem) ;
     background: linear-gradient(to bottom, #525252, black);
     box-shadow: none;
   }
@@ -496,8 +496,7 @@ body {
 
   100% {
     margin-bottom: 0;
-    -webkit-transform: translateY(-10.1rem) scale(85%);
-    -webkit-transform: translateY(-10.1rem) scale(85%);
+    -webkit-transform: translateY(-10.1rem);
     -webkit-background: linear-gradient(to bottom, #525252, black);
     -webkit-box-shadow: none;
   }
