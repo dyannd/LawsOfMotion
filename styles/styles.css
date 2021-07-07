@@ -6,22 +6,21 @@ body {
 
 }
 
+
 /**Taskbar**/
 .taskbar-column {
   width:100%;
   background-color: #3A6351;
   box-shadow: 0 0.3rem rgb(46,79,65,0.5);
-  z-index: 1;
 }
 .navbar{
-  padding:0;
+  padding:0 7%;
 }
 .navbar-brand {
   color:#F2EDD7;
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
-  margin-left: 5rem;
   transition:all 0.5s
 }
 
@@ -30,14 +29,9 @@ body {
   transform: scale(1.1,1.1);
 
 }
-.navbar-nav{
-  margin-left: auto;
-  margin-right: 5rem;
-}
 
 .nav-item {
   font-family: 'Oxygen', sans-serif;
-  margin: 0 0 0 1rem;
   font-size: 0.9rem;
   font-weight: normal;
 }
@@ -59,12 +53,8 @@ body {
 }
 
 .navbar-toggler{
-  border:solid;
-  border-width: 0.02rem;
-  border-color:#F2EDD7;
+  border:none;
   border-radius: 0;
-  margin-right: 1rem;
-  margin-left: auto;
   width:2.5rem;
   height:2.5rem;
   padding:0;
@@ -76,9 +66,6 @@ body {
   margin:auto;
 }
 
-#navbarNavDropdown{
-  margin-left: 4rem;
-}
 /**Text color**/
 .text {
   color: #F2EDD7;
@@ -115,6 +102,7 @@ body {
 
 /**Explore Button**/
 .explore-button  {
+  color: #F2EDD7;
   font-size: 1rem;
   background: linear-gradient(to right, #E48257 10%, #393232 100%);
   background-size: 400%;
@@ -130,13 +118,6 @@ body {
   border-color: #F2EDD7;
   transition: all 1s ease-out;
   cursor:pointer;
-}
-
-.explore-button a{
-  color: #F2EDD7;
-}
-.explore-button a:hover{
-  text-decoration: none;
 }
 
 
@@ -157,5 +138,21 @@ body {
   to {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+
+@media (max-width:600px){
+  .big-heading{
+    font-size: 4rem;
+  }
+
+  .small-heading{
+    font-size: 1.2rem;
+  }
+
+  .explore-button{
+    height:3rem;
+    width:8rem;
+    font-size: 0.8rem;
   }
 }

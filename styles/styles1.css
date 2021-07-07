@@ -15,19 +15,18 @@ body {
   width: 100%;
   background-color: #3A6351;
   box-shadow: 0 0.3rem rgb(46, 79, 65, 0.5);
-  z-index: 1;
+  z-index: 1000;
 }
 
 .navbar {
-  padding: 0;
+  padding: 0 7%;
 }
 
 .navbar-brand {
   color: #F2EDD7;
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
-  margin-left: 5rem;
   transition: all 0.5s
 }
 
@@ -38,7 +37,6 @@ body {
 
 .navbar-nav {
   margin-left: auto;
-  margin-right: 5rem;
 }
 
 .nav-item {
@@ -65,9 +63,7 @@ body {
 }
 
 .navbar-toggler {
-  border: solid;
-  border-width: 0.02rem;
-  border-color: #F2EDD7;
+  border: none;
   border-radius: 0;
   margin-right: 1rem;
   margin-left: auto;
@@ -82,9 +78,6 @@ body {
   margin: auto;
 }
 
-#navbarNavDropdown {
-  margin-left: 4rem;
-}
 
 /**Text color**/
 .text {
@@ -228,7 +221,8 @@ body {
   height: 300px;
   width: 300px;
   background: linear-gradient(to bottom, #F2EDD7, #706e63);
-  padding-top: 7.7rem;
+  display:flex;
+  align-items: center;
   animation: flydown 1s;
 }
 
@@ -239,7 +233,6 @@ body {
   margin: auto;
   background: linear-gradient(to bottom, #d61818, #a31212);
   border-radius: 50%;
-  padding-left: 2.5rem;
 }
 
 /**Pool Stick**/
@@ -411,4 +404,43 @@ body {
   50% {
     height: 0;
   }
+}
+
+@media(max-width:430px){
+  .white-ball{
+    width:250px;
+    height:250px;
+  }
+
+  .red-dot{
+    width:2.5rem;
+    height:2.5rem;
+    margin:auto;
+  }
+
+  .pool-stick {
+    width: 2.6rem;
+    height: 15rem;
+  }
+
+  
+  .refpointtext {
+    font-size: 0.7rem;  
+  }
+  
+  .pointfigure {
+    height: 0.6rem;
+    width: 0.6rem;   
+    transform: translateY(-5.5rem) translateX(2rem);
+  }
+  
+  .description-container{
+    margin:auto;
+    width:90%;
+  }
+
+  .des-title{
+    font-size: 2rem;
+  }
+
 }
